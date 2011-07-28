@@ -16,13 +16,16 @@ Every Now And Then
 Installation
 ------------
 
-$ bundle install
-
-$ gem build enat.gemspec
-
-$ gem install enat
+    $ bundle install
+    $ gem build enat.gemspec
+    $ gem install enat
 
 Notes
 -----
 
 If the operation inside the block takes longer than the specified interval, then the next iteration will begin immediately after the last.
+
+TODO
+----
+
+* Ability to exit block.

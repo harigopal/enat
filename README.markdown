@@ -17,7 +17,9 @@ Installation
 ------------
 
 $ bundle install
+
 $ gem build enat.gemspec
+
 $ gem install enat
 
 Notes

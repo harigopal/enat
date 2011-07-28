@@ -1,23 +1,24 @@
 Every Now And Then
 ==================
 
-    require 'enat'
-    include Enat
+    require 'enat/import'
     
-    every :minute do
+    every 10 do
       puts "foo"
     end
     
-    every 9.76, :seconds do
-      puts "whoopeee!"
+    require 'active_support/time'
+
+    every 4.2.minutes do
+      puts "wheee!"
     end
 
-Full Spec
----------
+Installation
+------------
 
-    every [[n],] [:second(s), :minute(s), :hour(s), :day(s)] do
-      # something
-    end
+$ bundle install
+$ gem build enat.gemspec
+$ gem install enat
 
 Notes
 -----

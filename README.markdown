@@ -23,6 +23,6 @@ Examples
     end
 
 Installation
-------------
+============
 
     $ gem install enat

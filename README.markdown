@@ -4,6 +4,9 @@ Every Now And Then
 It's quite simple, really - it lets you do something every specified interval of time. When supplied with a block, it
 yields the iteration count (starts at zero).
 
+It requires 'activesupport/time', so as to allow time intervals to be specified as 5.seconds, 6.7.days, etc. The 'every'
+method accepts integers or floats.
+
 If the operation inside the block takes longer than the specified interval, then the next iteration will begin
 immediately after the last.
 

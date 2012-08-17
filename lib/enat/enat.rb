@@ -1,4 +1,8 @@
+# Every Now And Then
 module Enat
+  # Yields to block every supplied interval
+  #
+  # @param [Fixnum, Float] interval_in_seconds minimum time interval between yields
   def every(interval_in_seconds)
     interval_in_seconds = interval_in_seconds.to_f
 

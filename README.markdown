@@ -1,16 +1,22 @@
 Every Now And Then
 ==================
 
-    require 'enat/import'
-    
-    every 10 do
-      puts "foo"
-    end
-    
-    require 'active_support/time'
+It's quite simple, really - it lets you do something every specified interval of time. When supplied with a block, it
+yields the iteration count (starts at zero).
 
-    every 4.2.minutes do
-      puts "wheee!"
+If the operation inside the block takes longer than the specified interval, then the next iteration will begin
+immediately after the last.
+
+To exit, simply break out of the loop.
+
+Examples
+========
+
+    require 'enat'
+
+    every 4.2.minutes do |i|
+      puts "wheee! i've done this #{i} times!"
+      break if i > 5
     end
 
 Installation
@@ -19,13 +25,3 @@ Installation
     $ bundle install
     $ gem build enat.gemspec
     $ gem install enat
-
-Notes
------
-
-If the operation inside the block takes longer than the specified interval, then the next iteration will begin immediately after the last.
-
-TODO
-----
-
-* Ability to exit block.

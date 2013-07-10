@@ -1,6 +1,5 @@
-require 'active_support/time'
-require 'enat/import'
+require_relative '../lib/enat'
 
-every(2.seconds) do |iteration|
+every 2.seconds do |iteration|
   puts "Hello no. #{iteration}!"
 end

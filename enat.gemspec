@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 1.9.2'
 
+  s.add_development_dependency 'appraisal'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'
 

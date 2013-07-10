@@ -1,5 +1,10 @@
 language: ruby
-rvm:
-  - 1.9.2
-  - 1.9.3
-  - 2.0.0
+
+matrix:
+  include:
+    # Current stable ruby is being tested comprehensively.
+    - { rvm: 2.0.0, gemfile: gemfiles/activesupport3.gemfile }
+    - { rvm: 2.0.0, gemfile: gemfiles/activesupport4.gemfile }
+
+    - { rvm: 1.9.2, gemfile: gemfiles/activesupport3.gemfile }
+    - { rvm: 1.9.3, gemfile: gemfiles/activesupport4.gemfile }

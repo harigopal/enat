@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
   s.summary            = 'Does something every specified interval.'
   s.description        = 'Executes a block of code at intervals of time, without guarantee of timing.'
   s.homepage           = 'http://github.com/harigopal/enat'
+  s.license            = 'MIT'
 
   s.required_ruby_version = '>= 1.9.2'
 

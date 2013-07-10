@@ -1,6 +1,8 @@
 Every Now And Then
 ==================
 
+[<img src="https://secure.travis-ci.org/harigopal/enat.png?branch=master" alt="Build Status" />](http://travis-ci.org/harigopal/enat)
+
 It's quite simple, really - it lets you do something every specified interval of time. When supplied with a block, it
 yields the iteration count (starts at zero).
 

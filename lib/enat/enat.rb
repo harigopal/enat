@@ -1,13 +1,19 @@
+require_relative 'error'
+
 # Every Now And Then
 module Enat
   # Yields to block every supplied interval
   #
   # @param [Fixnum, Float] interval_in_seconds minimum time interval between yields
   def every(interval_in_seconds)
+    unless interval_in_seconds.respond_to?(:to_f)
+      raise InvalidIntervalError, 'Interval must be a numeric (Fixnum, Float).'
+    end
+
     interval_in_seconds = interval_in_seconds.to_f
 
-    unless interval_in_seconds > 0
-      raise EnatError, "Interval must be non-zero"
+    if interval_in_seconds.zero?
+      raise ZeroIntervalError, 'Interval cannot be zero.'
     end
 
     iteration = 0

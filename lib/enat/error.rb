@@ -1,3 +1,4 @@
 module Enat
-  class EnatError < StandardError; end
+  class InvalidIntervalError < StandardError; end
+  class ZeroIntervalError < StandardError; end
 end

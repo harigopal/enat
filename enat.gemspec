@@ -5,7 +5,7 @@ require 'enat/version'
 
 Gem::Specification.new do |s|
   s.name     = 'enat'
-  s.version  = Enat::VERSION
+  s.version  = Enat.version
   s.platform = Gem::Platform::RUBY
 
   s.authors            = ['Hari Gopal']

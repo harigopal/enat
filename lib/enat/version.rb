@@ -1,3 +1,5 @@
 module Enat
-  VERSION = '0.1.2'
+  def self.version
+    Gem::Version.new '0.1.2'
+  end
 end

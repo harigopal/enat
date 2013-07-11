@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'activesupport'
 
-  s.files              = `git ls-files`.split("\n") - %w(Gemfile.lock .rvmrc)
+  s.files              = `git ls-files`.split("\n") - %w(Gemfile.lock .ruby-version)
   s.test_files         = `git ls-files -- spec/*`.split("\n")
   s.require_paths      = %w(lib)
 end

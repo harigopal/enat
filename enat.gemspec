@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version  = Enat.version
   s.platform = Gem::Platform::RUBY
 
-  s.authors            = ['Hari Gopal']
+  s.author             = 'Hari Gopal'
   s.email              = 'harigopal1@gmail.com'
   s.summary            = 'Does something every specified interval.'
   s.description        = 'Executes a block of code at intervals of time, without guarantee of timing.'

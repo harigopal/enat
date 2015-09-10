@@ -6,5 +6,5 @@ matrix:
     - { rvm: 2.0.0, gemfile: gemfiles/activesupport3.gemfile }
     - { rvm: 2.0.0, gemfile: gemfiles/activesupport4.gemfile }
 
-    - { rvm: 1.9.2, gemfile: gemfiles/activesupport3.gemfile }
+    - { rvm: 1.9.3, gemfile: gemfiles/activesupport3.gemfile }
     - { rvm: 1.9.3, gemfile: gemfiles/activesupport4.gemfile }

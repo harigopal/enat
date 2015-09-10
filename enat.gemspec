@@ -17,11 +17,11 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 1.9.3'
 
-  s.add_development_dependency 'appraisal'
-  s.add_development_dependency 'rake'
-  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'appraisal', '~> 2.0'
+  s.add_development_dependency 'rake', '~> 10.0'
+  s.add_development_dependency 'rspec', '~> 3.0'
 
-  s.add_dependency 'activesupport'
+  s.add_dependency 'activesupport', '>= 3.0'
 
   s.files              = `git ls-files`.split("\n") - %w(Gemfile.lock .ruby-version)
   s.test_files         = `git ls-files -- spec/*`.split("\n")

@@ -1,3 +1,6 @@
 Gemfile.lock
 *.gem
 gemfiles/*.lock
+
+# Ignore IDE-specific files.
+/.idea

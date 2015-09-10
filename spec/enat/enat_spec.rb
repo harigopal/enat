@@ -34,8 +34,8 @@ describe DummyClass do
   end
 
   it 'works' do
-    subject.stub :sleep
-    subject.should_receive(:repeatable_task).exactly(5).times
+    allow(subject).to receive(:sleep)
+    expect(subject).to receive(:repeatable_task).exactly(5).times
     subject.test_method
   end
 end
